@@ -1,112 +1,509 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>맑음 테스트 😊</title>
-	<style>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>맑음 테스트 😊</title>
+        <link
+            href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css"
+            rel="stylesheet"
+        />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Inter&display=swap");
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            a {
+                text-decoration: none;
+                color: #333;
+            }
+            li {
+                list-style: none;
+            }
+            img {
+                vertical-align: top;
+            }
+            html {
+                overflow-x: hidden;
+            }
+            #wrap {
+                width: 1920px;
+                height: 10000px;
+                background-color: #ccc;
+            }
+            #header {
+                width: 1920px;
+                height: 1080px;
+                background-image: url(../assets/images/MAIN\ PAGE-2.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            #nav {
+                width: 1920px;
+                height: 50px;
+                text-align: right;
+                position: relative;
+            }
+            #nav .contant {
+                font-size: 1rem;
+                color: #fff;
+                position: absolute;
+                right: 142px;
+                top: 50px;
+            }
+            #nav .df {
+                font-size: 1rem;
+                color: #fff;
+                position: absolute;
+                right: 59px;
+                top: 50px;
+            }
+            #header__inner {
+                width: 1920px;
+                height: 500px;
+                margin-top: 50px;
+            }
+            .header__desc1 {
+                color: #fff;
+                font-size: 3.5rem;
+                width: 625px;
+                margin-left: 163px;
+                padding-top: 150px;
+                line-height: 1.2;
+            }
+            .header__desc2 {
+                color: #fff;
+                font-size: 1rem;
+                width: 617px;
+                margin-left: 163px;
+                margin-top: 30px;
+            }
+            #header__inner2 {
+                display: flex;
+            }
+            .header__logo {
+                background-image: url(../assets/images/header__logo.svg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 317px;
+                height: 123px;
+                margin-left: 80px;
+                margin-top: 250px;
+            }
+            .header__line {
+                margin-top: 340px;
+                margin-left: 30px;
+            }
+            .header__package {
+                text-align: right;
+                color: #fff;
+                font-size: 35px;
+                margin-right: 35px;
+                margin-top: -30px;
+            }
+            #section1 {
+                width: 1920px;
+                height: 1120px;
+                background-color: #fff;
+                position: relative;
+            }
+            .section1__image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+            .section1__one {
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .section1__desc {
+                position: absolute;
+                z-index: 2;
+                font-size: 90px;
+                left: 59px;
+                top: 156px;
+                font-family: Baskervville;
+            }
+            .section1__desc2 {
+                display: flex;
+                font-family: Inter;
+                justify-content: space-between;
+            }
+            .desc2__inner1 {
+                font-size: 20px;
+                margin-top: -130px;
+                margin-left: 60px;
+            }
+            .desc2__inner2 {
+                font-size: 20px;
+                margin-top: -130px;
+                margin-right: 60px;
+            }
+            #section2 {
+                width: 1920px;
+                height: 1120px;
+                background-color: #fff;
+            }
+            .section2__image {
+                display: flex;
+                padding-top: 50px;
+            }
+            .section2__image1 {
+                width: 940px;
+                height: 717px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url(../assets/images/section2__img1.png);
+                margin-right: 42px;
+            }
+            .section2__image2 {
+                width: 940px;
+                height: 717px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url(../assets/images/section2__img2.png);
+            }
+            .section2__slide {
+                font-size: 200px;
+                font-family: Baskervville;
+                white-space: nowrap;
+                overflow: hidden;
+                padding-top: 50px;
+            }
+            #section3 {
+                width: 1920px;
+                height: 2754px;
+                display: flex;
+            }
+            .section3__right {
+                width: 1920px;
 
-		* {
-			margin: 0;
-			padding: 0;
-			color: #333;
-		}
-		a {
-			text-decoration: none;
-			color: #333;
-		}
-		li {
-			list-style: none;
-		}
-		img {
-			vertical-align: top;
-		}
-		#wrap {
-			width: 100%;
-			height: 10000px;
-			background-color: #ccc;
-		}
-		#header {
-			width: 100%;
-			height: 1080px;
-			background-image: url(../assets/images/MAIN\ PAGE-2.png);
-			background-size: cover;
-			background-repeat: no-repeat;
-		}
-		#nav {
-			width: 100%;
-			height: 50px;
-			text-align: right;
-			position: relative;
-		}
-		#nav .contant {
-			font-size: 1rem;
-			color: #fff;
-			position: absolute;
-			right: 142px;
-			top: 50px;
-		}
-		#nav .df {
-			font-size: 1rem;
-			color: #fff;
-			position: absolute;
-			right: 59px;
-			top: 50px;
-		}
-		#header__inner {
-			width: 100%;
-			height: 500px;
-			margin-top: 50px;
-		}
-		.header__desc1 {
-			color: #fff;
-			font-size: 3.5rem;
-			width: 625px;
-			margin-left: 163px;
-			padding-top: 150px;
-			line-height: 1.2;
-		}
-		.header__desc2 {
-			color: #fff;
-			font-size: 1rem;
-			width: 617px;
-			margin-left: 163px;
-			margin-top: 30px;
-		}
-		.header__logo {
-			font-size: 10rem;
-			color: #fff;
-			margin-left: 80px;
-			margin-top: 200px;
-		}
-	</style>
-</head>
-<body>
-	<div id="wrap">
-		<header id="header">
-			<nav id="nav">
-				<a href="#" class="contant">CONTACT</a>
-				<a href="#" class="df">df</a>
-			</nav>
-			<div id="header__inner">
-			<div class="header__desc1">
-				Global leader <br>
-				in packaging Service
-			</div>
-			<div class="header__desc2">
-				S&K adds value to your brand with high quality packaging. With our<br>
-				know-how and experience accumulated through collaboration with<br>
-				luxury global customers, we are ready to contemplate your <br>
-				branding together.
-			</div>
-		</div>
-		<div id="header__inner2">
-			<div class="header__logo">
-				S&K
-			</div>
-		</div>
-		</header>
-		
-	</div>
-</body>
+                height: 2754px;
+                background-color: #1c1c1c;
+            }
+            .section3__container {
+                width: 1294px;
+                height: 966px;
+                background-color: #1c1c1c;
+                margin: 0 auto;
+            }
+            .section3__desc1 {
+                color: #fff;
+                font-size: 18px;
+                padding-top: 300px;
+            }
+            .section3__desc2 {
+                color: #1c1c1c;
+                font-size: 157px;
+                -webkit-text-stroke: 1px #fff;
+                padding-top: 75px;
+            }
+            .section3__desc3 {
+                color: #fff;
+                font-size: 122px;
+                font-family: Baskervville;
+                padding-top: 47px;
+                text-align: right;
+            }
+            .section3__img {
+                position: relative;
+            }
+            .section3__titleimg {
+                width: 900px;
+                height: 800px;
+                background-image: url(../assets/images/section3.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, 10%);
+            }
+            .section3__right__image {
+                width: 1920px;
+                height: 756px;
+                display: flex;
+            }
+            .section3__img1 {
+                width: 721px;
+                height: 756px;
+            }
+            .section3__img2 {
+                width: 501px;
+                height: 756px;
+                padding-left: 40px;
+            }
+            .section3__img3 {
+                width: 616px;
+                height: 756px;
+                padding-left: 40px;
+            }
+            .section3__right__slide {
+                width: 1920px;
+                height: 1032px;
+                display: flex;
+            }
+
+            .section3__last__img {
+                width: 1440px;
+                height: 940px;
+                margin-top: 92px;
+                background-size: cover;
+                background-image: url(../assets/images/section3__last.png);
+            }
+            .section3__desc__last {
+                margin-top: 92px;
+                width: 450px;
+                height: 940px;
+                position: relative;
+            }
+            .section3__desc4 {
+                color: #fff;
+                font-size: 55px;
+                font-family: Baskervville;
+                text-align: right;
+                position: absolute;
+                left: -280px;
+                top: 142px;
+            }
+            .section3__desc5 {
+                font-size: 20px;
+                color: #fff;
+                text-align: right;
+                position: absolute;
+                left: -100px;
+                top: 334px;
+            }
+            .section3__arrow {
+                display: flex;
+            }
+            .section3__desc6 {
+                color: #fff;
+                font-size: 16px;
+                position: absolute;
+                left: -100px;
+                top: 374px;
+            }
+            .section3__arrow__img {
+                width: 26px;
+                height: 51px;
+                position: absolute;
+                right: 62px;
+                top: 374px;
+            }
+            .section3__pcw {
+                display: flex;
+            }
+            .section3__line {
+                display: inline-block;
+                width: 160px;
+                height: 1px;
+                background-color: #fff;
+                position: absolute;
+                left: -300px;
+                top: 535px;
+            }
+            .section3__percent {
+                font-size: 18px;
+                color: #fff;
+                position: absolute;
+                left: -100px;
+                top: 520px;
+            }
+            #section4 {
+                width: 1920px;
+                height: 1096px;
+                background-color: #fff;
+            }
+            .section4__container {
+                width: 1800px;
+                height: 1026px;
+                margin: 0 auto;
+            }
+            .section4__desc1 {
+                font-size: 100px;
+                padding-top: 126px;
+            }
+            .section4__desc2 {
+                font-size: 20px;
+                padding-top: 54px;
+            }
+            .section4__about {
+                width: 1920px;
+                height: 70px;
+                background-color: #ffb71b;
+            }
+            .section4__aboutus {
+                font-size: 16px;
+                font-family: SUIT;
+            }
+            .section4__work {
+                font-size: 16px;
+                font-family: SUIT;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header id="header">
+                <nav id="nav">
+                    <a href="#" class="contant">CONTACT</a>
+                    <a href="#" class="df">df</a>
+                </nav>
+                <div id="header__inner">
+                    <div class="header__desc1">
+                        Global leader <br />
+                        in packaging Service
+                    </div>
+                    <div class="header__desc2">
+                        S&K adds value to your brand with high quality
+                        packaging. With our<br />
+                        know-how and experience accumulated through
+                        collaboration with<br />
+                        luxury global customers, we are ready to contemplate
+                        your <br />
+                        branding together.
+                    </div>
+                </div>
+                <div id="header__inner2">
+                    <div class="header__logo"></div>
+                    <div class="header__line">
+                        <img src="../assets/images/Vector 6.png" alt="" />
+                    </div>
+                </div>
+                <div class="header__innder3">
+                    <div class="header__package">PACKAGE</div>
+                </div>
+            </header>
+            <section id="section1">
+                <div class="section1__image">
+                    <img
+                        class="section1__one"
+                        src="../assets/images/Mask group.png"
+                        alt="section1 중앙 원"
+                    />
+                </div>
+                <div class="section1__desc">
+                    S&K adds value to <br />
+                    your brand with <br />
+                    high quality packaging.
+                </div>
+                <div class="section1__desc2">
+                    <div class="desc2__inner1">
+                        With our know-how and experience accumulated through
+                        collaboration
+                        <br />
+                        with luxury global customers, we are ready to
+                        contemplate and create
+                        <br />
+                        your brand packaging together.
+                    </div>
+                    <div class="desc2__inner2">
+                        We are committed to comply with global and local social
+                        compliance regulations <br />
+                        as well as our continuous improvement for eco-friendly
+                        products.
+                    </div>
+                </div>
+            </section>
+            <section id="section2">
+                <div class="section2__image">
+                    <div class="section2__image1"></div>
+                    <div class="section2__image2"></div>
+                </div>
+                <div class="section2__slide">
+                    Global leading Provider in Packaging
+                </div>
+            </section>
+            <section id="section3">
+                <div class="section3__left"></div>
+                <div class="section3__right">
+                    <div class="section3__container">
+                        <div class="section3__img">
+                            <div class="section3__titleimg"></div>
+                        </div>
+                        <div class="section3__desc1">
+                            Sed quis aenean consectetur pellentesque ornare
+                            pellen
+                        </div>
+                        <div class="section3__desc2">PRODUCTION</div>
+                        <div class="section3__desc3">SHOPPERS</div>
+                    </div>
+                    <div class="section3__right__image">
+                        <img
+                            class="section3__img1"
+                            src="../assets/images/section3__1.png"
+                            alt=""
+                        />
+                        <img
+                            class="section3__img2"
+                            src="../assets/images/section3__2.png"
+                            alt=""
+                        />
+                        <img
+                            class="section3__img3"
+                            src="../assets/images/section3__3.png"
+                            alt=""
+                        />
+                    </div>
+                    <div class="section3__right__slide">
+                        <div class="section3__last__img"></div>
+                        <div class="section3__desc__last">
+                            <div class="section3__desc4">
+                                S&K International <br />
+                                Green Packaging
+                            </div>
+                            <div class="section3__desc5">GOING GREEN</div>
+                            <div class="section3__arrow">
+                                <div class="section3__desc6">
+                                    Worried about the increasing number of
+                                    <br />
+                                    municipalities coming under bag ban<br />
+                                    ordinances ? Don’t worry, we have<br />
+                                    40% PCW paper and reusable paper<br />
+                                    bags to meet those ordinances head on.
+                                </div>
+                                <img
+                                    class="section3__arrow__img"
+                                    src="../assets/images/arrow.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="section3__pcw">
+                                <div class="section3__line"></div>
+                                <div class="section3__percent">
+                                    40% pcw paper
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section4">
+                <div class="section4__container">
+                    <div class="section4__desc1">GLOBAL BRAND</div>
+                    <div class="section4__desc2">
+                        Sapien purus arcu consectetur vestibulum sed cras
+                        venenatis odio. Cursus sapien conv
+                    </div>
+                    <div class="section4__slider__img">
+                        <img
+                            src="../assets/images/section4__slider.png"
+                            alt=""
+                        />
+                    </div>
+                </div>
+
+                <div class="section4__about">
+                    <div class="section4__aboutus">ABOUT US</div>
+                    <div class="section4__work">OUR WORK</div>
+                </div>
+            </section>
+        </div>
+
+        <script></script>
+    </body>
 </html>
