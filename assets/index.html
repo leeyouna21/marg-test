@@ -8,29 +8,86 @@
             href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="../assets/css/fonts.css" />
         <style>
             @import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
             @import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Inter&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Inter&family=Roboto:wght@300&display=swap");
             * {
+                margin: 0;
+                padding: 0;
+            }
+
+            html {
+                overflow-x: hidden;
+            }
+            body,
+            div,
+            dl,
+            dd,
+            dt,
+            ul,
+            li,
+            ol,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            pre,
+            code,
+            form,
+            fieldset,
+            legend,
+            p,
+            table,
+            th,
+            td,
+            input,
+            figure,
+            figcaption,
+            blockquote {
                 margin: 0;
                 padding: 0;
             }
             a {
                 text-decoration: none;
-                color: #333;
+                color: #000;
             }
-            li {
+            li,
+            ol,
+            ul {
                 list-style: none;
             }
-            img {
-                vertical-align: top;
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-weight: normal;
+                font-size: 1rem;
             }
-            html {
-                overflow-x: hidden;
+            em,
+            address {
+                font-style: normal;
+            }
+            img,
+            svg,
+            video {
+                display: block;
+                height: auto;
+                max-width: 100%;
+            }
+            img,
+            fieldset,
+            button {
+                border: 0;
             }
             #wrap {
                 width: 1920px;
-                height: 10000px;
+                height: auto;
                 background-color: #ccc;
             }
             #header {
@@ -47,19 +104,40 @@
                 position: relative;
             }
             #nav .contant {
-                font-size: 1rem;
+                font-size: 17px;
                 color: #fff;
                 position: absolute;
                 right: 142px;
                 top: 50px;
+                font-family: SUIT;
             }
             #nav .df {
-                font-size: 1rem;
                 color: #fff;
                 position: absolute;
                 right: 59px;
                 top: 50px;
             }
+            #nav .df i {
+                display: block;
+                width: 20px;
+                height: 2px;
+                background-color: #fff;
+            }
+            #nav .df i:nth-child(1) {
+                width: 44px;
+                margin-top: 6px;
+            }
+            #nav .df i:nth-child(2) {
+                width: 38px;
+                margin-top: 6px;
+                margin-left: 6px;
+            }
+            #nav .df i:nth-child(3) {
+                width: 38px;
+                margin-top: 6px;
+                margin-left: 6px;
+            }
+
             #header__inner {
                 width: 1920px;
                 height: 500px;
@@ -67,18 +145,21 @@
             }
             .header__desc1 {
                 color: #fff;
-                font-size: 3.5rem;
+                font-size: 60px;
                 width: 625px;
                 margin-left: 163px;
                 padding-top: 150px;
                 line-height: 1.2;
+                font-family: Gotham;
             }
             .header__desc2 {
                 color: #fff;
-                font-size: 1rem;
+                font-size: 18px;
                 width: 617px;
                 margin-left: 163px;
                 margin-top: 30px;
+                font-family: Gotham;
+                font-weight: 300;
             }
             #header__inner2 {
                 display: flex;
@@ -98,10 +179,11 @@
             }
             .header__package {
                 text-align: right;
+                padding-right: 55px;
                 color: #fff;
-                font-size: 35px;
-                margin-right: 35px;
+                font-size: 30px;
                 margin-top: -30px;
+                font-family: SUIT;
             }
             #section1 {
                 width: 1920px;
@@ -181,7 +263,6 @@
             }
             .section3__right {
                 width: 1920px;
-
                 height: 2754px;
                 background-color: #1c1c1c;
             }
@@ -195,12 +276,15 @@
                 color: #fff;
                 font-size: 18px;
                 padding-top: 300px;
+                font-family: Gotham;
+                text-transform: uppercase;
             }
             .section3__desc2 {
                 color: #1c1c1c;
                 font-size: 157px;
                 -webkit-text-stroke: 1px #fff;
                 padding-top: 75px;
+                font-family: Gotham;
             }
             .section3__desc3 {
                 color: #fff;
@@ -286,6 +370,8 @@
                 position: absolute;
                 left: -100px;
                 top: 374px;
+                font-family: Gotham;
+                font-weight: 100;
             }
             .section3__arrow__img {
                 width: 26px;
@@ -312,6 +398,8 @@
                 position: absolute;
                 left: -100px;
                 top: 520px;
+                font-family: Gotham;
+                font-weight: 500;
             }
             #section4 {
                 width: 1920px;
@@ -326,23 +414,160 @@
             .section4__desc1 {
                 font-size: 100px;
                 padding-top: 126px;
+                font-family: Gotham;
+                font-weight: 700;
             }
             .section4__desc2 {
                 font-size: 20px;
                 padding-top: 54px;
+                font-family: Gotham;
             }
             .section4__about {
                 width: 1920px;
                 height: 70px;
                 background-color: #ffb71b;
+                display: flex;
+                justify-content: center;
             }
             .section4__aboutus {
                 font-size: 16px;
                 font-family: SUIT;
+                font-weight: bold;
+                margin-right: 72px;
+                margin-top: 25px;
             }
             .section4__work {
                 font-size: 16px;
                 font-family: SUIT;
+                font-weight: bold;
+                color: #fff;
+                margin-top: 25px;
+            }
+            #footer {
+                width: 1920px;
+                height: 985px;
+                background-color: #000;
+            }
+            .footer__container {
+                width: 1800px;
+                height: 985px;
+                margin: 0 auto;
+            }
+            .footer__desc1 {
+                color: #fff;
+                font-size: 28px;
+                padding-top: 146px;
+                font-family: Gotham;
+                font-weight: 100;
+            }
+            .footer__email {
+                display: flex;
+                padding-top: 130px;
+                justify-content: space-between;
+                font-family: Gotham;
+            }
+            .email {
+                font-size: 114px;
+                color: #fff;
+            }
+            .footer__contact {
+                margin-top: 60px;
+                color: #fff;
+                font-size: 17px;
+                text-align: center;
+                width: 242px;
+                height: 77px;
+                border: 1px solid #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .footer__line {
+                display: inline-block;
+                width: 1800px;
+                height: 1px;
+                background-color: #fff;
+                margin-top: 94px;
+            }
+            .footer__tap {
+                padding-top: 27px;
+                color: #fff;
+                text-align: right;
+                font-size: 14px;
+            }
+            .footer__cont {
+                padding-top: 80px;
+                color: #fff;
+                font-size: 16px;
+                font-family: Gotham;
+                font-weight: 700;
+            }
+            .footer__desc2 {
+                padding-top: 18px;
+                color: #fff;
+                font-size: 16px;
+                line-height: 2;
+                font-family: Gotham;
+                font-weight: 100;
+            }
+            .footer__copy {
+                padding-top: 30px;
+                color: #f1f1f1c0;
+                font-size: 12px;
+                line-height: 2;
+                font-family: Roboto;
+            }
+            #allMenu {
+                width: 1920px;
+                height: 1075px;
+                background-color: #000;
+                /* position: fixed;
+                visibility: hidden;
+                opacity: 0;
+                top: 0; */
+            }
+            /* #allMenu.on {
+                visibility: visible;
+                opacity: 1;
+            } */
+            .menu__header {
+                width: 1920px;
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+                padding-top: 49px;
+            }
+            .menu__logo {
+                background-image: url(../assets/images/header__logo.svg);
+                width: 97px;
+                height: 38px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-left: 60px;
+            }
+            .menu__x {
+                background-image: url(../assets/images/menu__x.png);
+                width: 26px;
+                height: 26px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-right: 60px;
+            }
+            .menu__inner {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 150px;
+            }
+            .menu__about {
+                color: #ffffff4a;
+                font-size: 75px;
+                font-family: Gotham;
+            }
+            .menu__work {
+                color: #ffffff4a;
+                font-size: 75px;
+                font-family: Gotham;
             }
         </style>
     </head>
@@ -350,8 +575,12 @@
         <div id="wrap">
             <header id="header">
                 <nav id="nav">
-                    <a href="#" class="contant">CONTACT</a>
-                    <a href="#" class="df">df</a>
+                    <div class="contant">CONTACT</div>
+                    <div class="df">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
                 </nav>
                 <div id="header__inner">
                     <div class="header__desc1">
@@ -378,6 +607,38 @@
                     <div class="header__package">PACKAGE</div>
                 </div>
             </header>
+            <div id="allMenu" style="position: relative">
+                <div class="menu__header">
+                    <div class="menu__logo"></div>
+                    <div class="menu__x"></div>
+                </div>
+                <div class="menu__inner">
+                    <div class="menu__about" style="opacity: 1">
+                        ABOUT US
+                        <ul
+                            style="
+                                position: absolute;
+                                left: 200px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                color: #fff;
+                                font-family: Baskervville;
+                                font-size: 120px;
+                            "
+                        >
+                            <li>Introduction</li>
+                            <li>Fsc,Fso</li>
+                            <li>Brand</li>
+                            <li>Location</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                    <div class="menu__logo2">
+                        <img src="../assets/images/menuand1.png" alt="" />
+                    </div>
+                    <div class="menu__work">OUR WORK</div>
+                </div>
+            </div>
             <section id="section1">
                 <div class="section1__image">
                     <img
@@ -496,14 +757,40 @@
                         />
                     </div>
                 </div>
-
                 <div class="section4__about">
                     <div class="section4__aboutus">ABOUT US</div>
                     <div class="section4__work">OUR WORK</div>
                 </div>
             </section>
+            <footer id="footer">
+                <div class="footer__container">
+                    <div class="footer__desc1">
+                        We would love to get to know you! <br />
+                        If you have any questions, fill in the form and we will
+                        get back to you as soon as possible.
+                    </div>
+                    <div class="footer__email">
+                        <a class="email" href="mailto:hello@snkintl.com"
+                            >hello@snkintl.com</a
+                        >
+                        <div class="footer__contact">
+                            <a href="mailto:hello@snkintl.com">CONTACT</a>
+                        </div>
+                    </div>
+                    <div class="footer__line"></div>
+                    <div class="footer__tap"><a href="#">Go to Tap</a></div>
+                    <div class="footer__cont">CONTACT</div>
+                    <div class="footer__desc2">
+                        S&K B/D 5F, 134 Hakdong-ro, Gangnam-gu, Seoul, Korea<br />
+                        Tel. 82-2-3443-1212 Fax. 82-2-3443-5347
+                    </div>
+                    <div class="footer__copy">
+                        COPYRIGHT (c) S&K INTERNATIONAL CO., LTD. ALL RIGHT
+                        RESERVED.
+                    </div>
+                </div>
+            </footer>
         </div>
-
         <script></script>
     </body>
 </html>

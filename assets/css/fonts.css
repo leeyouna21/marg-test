@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Gotham";
+    font-weight: 500;
+    font-display: swap;
+    src: local("Gotham-Book"),
+        url("fonts/Gotham/Gotham-Book.otf") format("truetype");
+}
+@font-face {
+    font-family: "Gotham";
+    font-weight: 300;
+    font-display: swap;
+    src: local("Gotham-Light"),
+        url("fonts/Gotham/Gotham-Light.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "Gotham";
+    font-weight: 100;
+    font-display: swap;
+    src: local("Gotham-Thin"),
+        url("fonts/Gotham/Gotham-Thin.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "Gotham";
+    font-weight: 700;
+    font-display: swap;
+    src: local("Gotham-Regular"),
+        url("fonts/Gotham/Gotham-Regular.otf") format("truetype");
+}
