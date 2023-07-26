@@ -28,3 +28,6 @@
     src: local("Gotham-Regular"),
         url("fonts/Gotham/Gotham-Regular.otf") format("truetype");
 }
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Inter&family=Roboto:wght@300&display=swap");

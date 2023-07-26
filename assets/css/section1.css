@@ -1,0 +1,50 @@
+#section1 {
+    width: 1920px;
+    height: 1120px;
+    background-color: #fff;
+    position: relative;
+}
+.section1__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.section1__one {
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: spin 5s linear infinite;
+}
+/* section1 원 이미지 돌아 */
+@keyframes spin {
+    from {
+        transform: rotate(0deg); /* 회전 시작 각도 (0도) */
+    }
+    to {
+        transform: rotate(360deg); /* 회전 종료 각도 (한 바퀴, 360도) */
+    }
+}
+.section1__desc {
+    position: absolute;
+    z-index: 2;
+    font-size: 90px;
+    left: 59px;
+    top: 156px;
+    font-family: Baskervville;
+}
+.section1__desc2 {
+    display: flex;
+    font-family: Inter;
+    justify-content: space-between;
+}
+.desc2__inner1 {
+    font-size: 20px;
+    margin-top: -130px;
+    margin-left: 60px;
+}
+.desc2__inner2 {
+    font-size: 20px;
+    margin-top: -130px;
+    margin-right: 60px;
+}
