@@ -191,13 +191,30 @@
                         />
                     </div>
                     <div class="section3__right__slide">
-                        <div
-                            class="section3__last__img active"
-                            style="
-                                background-image: url(../assets/images/section3__last.png);
-                            "
-                        ></div>
-
+                        <div class="section3__slider__wrap">
+                            <div class="section3__slider__img">
+                                <div class="section3__slider__inner">
+                                    <div class="section3__slider s4">
+                                        <img
+                                            src="../assets/images/section3__last.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="section3__slider s5">
+                                        <img
+                                            src="../assets/images/section3__last.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="section3__slider s6">
+                                        <img
+                                            src="../assets/images/section3__last.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="section3__desc__last">
                             <div class="section3__desc4">
                                 S&K International <br />
@@ -417,6 +434,46 @@
             });
         </script>
 
+        <!-- section3 이미지 슬라이드 -->
+        <script>
+            const sliderWrap2 = document.querySelector(
+                ".section3__slider__wrap"
+            );
+            const sliderImg2 = sliderWrap2.querySelector(
+                ".section3__slider__img"
+            );
+            const sliderInner2 = sliderWrap2.querySelector(
+                ".section3__slider__inner"
+            );
+            const slider2 = document.querySelectorAll(".section3__slider");
+
+            let currentIndex2 = 0;
+            let sliderCount2 = slider2.length;
+            let setInterval2 = 2000;
+            let sliderWidth2 = slider2[0].clientWidth;
+            let sliderClone2 = sliderInner2.firstElementChild.cloneNode(true);
+
+            sliderInner2.appendChild(sliderClone2);
+
+            function sliderEffect() {
+                currentIndex2++;
+                sliderInner2.style.transition = "all 0.6s";
+                sliderInner2.style.transform = `translateX(-${
+                    sliderWidth2 * currentIndex2
+                }px )`;
+
+                if (currentIndex2 == sliderCount2) {
+                    setTimeout(() => {
+                        sliderInner2.style.transition = "0s";
+                        sliderInner2.style.transform = `translateX(0px)`;
+                    }, 700);
+                    currentIndex2 = 0;
+                }
+            }
+
+            setInterval(sliderEffect, setInterval2);
+        </script>
+
         <!-- 글로벌 브랜드 이미지 슬라이드 -->
         <script>
             const sliderWrap = document.querySelector(
@@ -513,5 +570,7 @@
                     });
                 });
         </script>
+
+        <!-- section3 슬라이드 구현 -->
     </body>
 </html>
