@@ -89,3 +89,48 @@
 .slider__dot .dot.active {
     background-color: #000;
 }
+
+br.pc {
+    display: block;
+}
+br.mo {
+    display: none;
+}
+
+@media (max-width: 1280px) {
+    br.pc {
+        display: none;
+    }
+    br.mo {
+        display: block;
+    }
+    #section4 {
+        width: 100%;
+        height: 1080px;
+    }
+    .section4__container {
+    }
+    .section4__desc1 {
+        font-weight: normal;
+    }
+    .section4__desc2 {
+        font-size: 40px;
+    }
+    .section4__slider__wrap {
+        width: 1280px;
+        height: 940px;
+    }
+    .slider__dot {
+        background-color: red;
+        width: 1280px;
+        position: static;
+        /* margin-top: -430px; */
+        z-index: 9999;
+        position: relative;
+        justify-content: center;
+    }
+    .section4__about {
+        width: 1280px;
+        margin-left: -100px;
+    }
+}
