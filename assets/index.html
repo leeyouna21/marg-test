@@ -9,567 +9,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="../assets/css/fonts.css" />
-        <style>
-            @import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
-            @import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Inter&display=swap");
-            @import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Inter&family=Roboto:wght@300&display=swap");
-            * {
-                margin: 0;
-                padding: 0;
-            }
-
-            html {
-                overflow-x: hidden;
-            }
-            body,
-            div,
-            dl,
-            dd,
-            dt,
-            ul,
-            li,
-            ol,
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6,
-            pre,
-            code,
-            form,
-            fieldset,
-            legend,
-            p,
-            table,
-            th,
-            td,
-            input,
-            figure,
-            figcaption,
-            blockquote {
-                margin: 0;
-                padding: 0;
-            }
-            a {
-                text-decoration: none;
-                color: #000;
-            }
-            li,
-            ol,
-            ul {
-                list-style: none;
-            }
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                font-weight: normal;
-                font-size: 1rem;
-            }
-            em,
-            address {
-                font-style: normal;
-            }
-            img,
-            svg,
-            video {
-                display: block;
-                height: auto;
-                max-width: 100%;
-            }
-            img,
-            fieldset,
-            button {
-                border: 0;
-            }
-            #wrap {
-                width: 1920px;
-                height: auto;
-                background-color: #ccc;
-            }
-            #header {
-                width: 1920px;
-                height: 1080px;
-                background-image: url(../assets/images/MAIN\ PAGE-2.png);
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-            #nav {
-                width: 1920px;
-                height: 50px;
-                text-align: right;
-                position: relative;
-            }
-            #nav .contant {
-                font-size: 17px;
-                color: #fff;
-                position: absolute;
-                right: 142px;
-                top: 50px;
-                font-family: SUIT;
-            }
-            #nav .df {
-                color: #fff;
-                position: absolute;
-                right: 59px;
-                top: 50px;
-            }
-            #nav .df i {
-                display: block;
-                width: 20px;
-                height: 2px;
-                background-color: #fff;
-            }
-            #nav .df i:nth-child(1) {
-                width: 44px;
-                margin-top: 6px;
-            }
-            #nav .df i:nth-child(2) {
-                width: 38px;
-                margin-top: 6px;
-                margin-left: 6px;
-            }
-            #nav .df i:nth-child(3) {
-                width: 38px;
-                margin-top: 6px;
-                margin-left: 6px;
-            }
-
-            #header__inner {
-                width: 1920px;
-                height: 500px;
-                margin-top: 50px;
-            }
-            .header__desc1 {
-                color: #fff;
-                font-size: 60px;
-                width: 625px;
-                margin-left: 163px;
-                padding-top: 150px;
-                line-height: 1.2;
-                font-family: Gotham;
-            }
-            .header__desc2 {
-                color: #fff;
-                font-size: 18px;
-                width: 617px;
-                margin-left: 163px;
-                margin-top: 30px;
-                font-family: Gotham;
-                font-weight: 300;
-            }
-            #header__inner2 {
-                display: flex;
-            }
-            .header__logo {
-                background-image: url(../assets/images/header__logo.svg);
-                background-size: cover;
-                background-repeat: no-repeat;
-                width: 317px;
-                height: 123px;
-                margin-left: 80px;
-                margin-top: 250px;
-            }
-            .header__line {
-                margin-top: 340px;
-                margin-left: 30px;
-            }
-            .header__package {
-                text-align: right;
-                padding-right: 55px;
-                color: #fff;
-                font-size: 30px;
-                margin-top: -30px;
-                font-family: SUIT;
-            }
-            #section1 {
-                width: 1920px;
-                height: 1120px;
-                background-color: #fff;
-                position: relative;
-            }
-            .section1__image {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                height: 100%;
-            }
-            .section1__one {
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-            .section1__desc {
-                position: absolute;
-                z-index: 2;
-                font-size: 90px;
-                left: 59px;
-                top: 156px;
-                font-family: Baskervville;
-            }
-            .section1__desc2 {
-                display: flex;
-                font-family: Inter;
-                justify-content: space-between;
-            }
-            .desc2__inner1 {
-                font-size: 20px;
-                margin-top: -130px;
-                margin-left: 60px;
-            }
-            .desc2__inner2 {
-                font-size: 20px;
-                margin-top: -130px;
-                margin-right: 60px;
-            }
-            #section2 {
-                width: 1920px;
-                height: 1120px;
-                background-color: #fff;
-            }
-            .section2__image {
-                display: flex;
-                padding-top: 50px;
-            }
-            .section2__image1 {
-                width: 940px;
-                height: 717px;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-image: url(../assets/images/section2__img1.png);
-                margin-right: 42px;
-            }
-            .section2__image2 {
-                width: 940px;
-                height: 717px;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-image: url(../assets/images/section2__img2.png);
-            }
-            .section2__slide {
-                font-size: 200px;
-                font-family: Baskervville;
-                white-space: nowrap;
-                overflow: hidden;
-                padding-top: 50px;
-            }
-            #section3 {
-                width: 1920px;
-                height: 2754px;
-                display: flex;
-            }
-            .section3__right {
-                width: 1920px;
-                height: 2754px;
-                background-color: #1c1c1c;
-            }
-            .section3__container {
-                width: 1294px;
-                height: 966px;
-                background-color: #1c1c1c;
-                margin: 0 auto;
-            }
-            .section3__desc1 {
-                color: #fff;
-                font-size: 18px;
-                padding-top: 300px;
-                font-family: Gotham;
-                text-transform: uppercase;
-            }
-            .section3__desc2 {
-                color: #1c1c1c;
-                font-size: 157px;
-                -webkit-text-stroke: 1px #fff;
-                padding-top: 75px;
-                font-family: Gotham;
-            }
-            .section3__desc3 {
-                color: #fff;
-                font-size: 122px;
-                font-family: Baskervville;
-                padding-top: 47px;
-                text-align: right;
-            }
-            .section3__img {
-                position: relative;
-            }
-            .section3__titleimg {
-                width: 900px;
-                height: 800px;
-                background-image: url(../assets/images/section3.png);
-                background-size: cover;
-                background-repeat: no-repeat;
-                position: absolute;
-                left: 50%;
-                transform: translate(-50%, 10%);
-            }
-            .section3__right__image {
-                width: 1920px;
-                height: 756px;
-                display: flex;
-            }
-            .section3__img1 {
-                width: 721px;
-                height: 756px;
-            }
-            .section3__img2 {
-                width: 501px;
-                height: 756px;
-                padding-left: 40px;
-            }
-            .section3__img3 {
-                width: 616px;
-                height: 756px;
-                padding-left: 40px;
-            }
-            .section3__right__slide {
-                width: 1920px;
-                height: 1032px;
-                display: flex;
-            }
-
-            .section3__last__img {
-                width: 1440px;
-                height: 940px;
-                margin-top: 92px;
-                background-size: cover;
-                background-image: url(../assets/images/section3__last.png);
-            }
-            .section3__desc__last {
-                margin-top: 92px;
-                width: 450px;
-                height: 940px;
-                position: relative;
-            }
-            .section3__desc4 {
-                color: #fff;
-                font-size: 55px;
-                font-family: Baskervville;
-                text-align: right;
-                position: absolute;
-                left: -280px;
-                top: 142px;
-            }
-            .section3__desc5 {
-                font-size: 20px;
-                color: #fff;
-                text-align: right;
-                position: absolute;
-                left: -100px;
-                top: 334px;
-            }
-            .section3__arrow {
-                display: flex;
-            }
-            .section3__desc6 {
-                color: #fff;
-                font-size: 16px;
-                position: absolute;
-                left: -100px;
-                top: 374px;
-                font-family: Gotham;
-                font-weight: 100;
-            }
-            .section3__arrow__img {
-                width: 26px;
-                height: 51px;
-                position: absolute;
-                right: 62px;
-                top: 374px;
-            }
-            .section3__pcw {
-                display: flex;
-            }
-            .section3__line {
-                display: inline-block;
-                width: 160px;
-                height: 1px;
-                background-color: #fff;
-                position: absolute;
-                left: -300px;
-                top: 535px;
-            }
-            .section3__percent {
-                font-size: 18px;
-                color: #fff;
-                position: absolute;
-                left: -100px;
-                top: 520px;
-                font-family: Gotham;
-                font-weight: 500;
-            }
-            #section4 {
-                width: 1920px;
-                height: 1096px;
-                background-color: #fff;
-            }
-            .section4__container {
-                width: 1800px;
-                height: 1026px;
-                margin: 0 auto;
-            }
-            .section4__desc1 {
-                font-size: 100px;
-                padding-top: 126px;
-                font-family: Gotham;
-                font-weight: 700;
-            }
-            .section4__desc2 {
-                font-size: 20px;
-                padding-top: 54px;
-                font-family: Gotham;
-            }
-            .section4__about {
-                width: 1920px;
-                height: 70px;
-                background-color: #ffb71b;
-                display: flex;
-                justify-content: center;
-            }
-            .section4__aboutus {
-                font-size: 16px;
-                font-family: SUIT;
-                font-weight: bold;
-                margin-right: 72px;
-                margin-top: 25px;
-            }
-            .section4__work {
-                font-size: 16px;
-                font-family: SUIT;
-                font-weight: bold;
-                color: #fff;
-                margin-top: 25px;
-            }
-            #footer {
-                width: 1920px;
-                height: 985px;
-                background-color: #000;
-            }
-            .footer__container {
-                width: 1800px;
-                height: 985px;
-                margin: 0 auto;
-            }
-            .footer__desc1 {
-                color: #fff;
-                font-size: 28px;
-                padding-top: 146px;
-                font-family: Gotham;
-                font-weight: 100;
-            }
-            .footer__email {
-                display: flex;
-                padding-top: 130px;
-                justify-content: space-between;
-                font-family: Gotham;
-            }
-            .email {
-                font-size: 114px;
-                color: #fff;
-            }
-            .footer__contact {
-                margin-top: 60px;
-                color: #fff;
-                font-size: 17px;
-                text-align: center;
-                width: 242px;
-                height: 77px;
-                border: 1px solid #fff;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .footer__line {
-                display: inline-block;
-                width: 1800px;
-                height: 1px;
-                background-color: #fff;
-                margin-top: 94px;
-            }
-            .footer__tap {
-                padding-top: 27px;
-                color: #fff;
-                text-align: right;
-                font-size: 14px;
-            }
-            .footer__cont {
-                padding-top: 80px;
-                color: #fff;
-                font-size: 16px;
-                font-family: Gotham;
-                font-weight: 700;
-            }
-            .footer__desc2 {
-                padding-top: 18px;
-                color: #fff;
-                font-size: 16px;
-                line-height: 2;
-                font-family: Gotham;
-                font-weight: 100;
-            }
-            .footer__copy {
-                padding-top: 30px;
-                color: #f1f1f1c0;
-                font-size: 12px;
-                line-height: 2;
-                font-family: Roboto;
-            }
-            #allMenu {
-                width: 1920px;
-                height: 1075px;
-                background-color: #000;
-                /* position: fixed;
-                visibility: hidden;
-                opacity: 0;
-                top: 0; */
-            }
-            /* #allMenu.on {
-                visibility: visible;
-                opacity: 1;
-            } */
-            .menu__header {
-                width: 1920px;
-                height: 100px;
-                display: flex;
-                justify-content: space-between;
-                padding-top: 49px;
-            }
-            .menu__logo {
-                background-image: url(../assets/images/header__logo.svg);
-                width: 97px;
-                height: 38px;
-                background-size: cover;
-                background-repeat: no-repeat;
-                margin-left: 60px;
-            }
-            .menu__x {
-                background-image: url(../assets/images/menu__x.png);
-                width: 26px;
-                height: 26px;
-                background-size: cover;
-                background-repeat: no-repeat;
-                margin-right: 60px;
-            }
-            .menu__inner {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: 150px;
-            }
-            .menu__about {
-                color: #ffffff4a;
-                font-size: 75px;
-                font-family: Gotham;
-            }
-            .menu__work {
-                color: #ffffff4a;
-                font-size: 75px;
-                font-family: Gotham;
-            }
-        </style>
+        <link rel="stylesheet" href="../assets/css/index.css" />
     </head>
     <body>
         <div id="wrap">
@@ -600,7 +40,10 @@
                 <div id="header__inner2">
                     <div class="header__logo"></div>
                     <div class="header__line">
-                        <img src="../assets/images/Vector 6.png" alt="" />
+                        <img
+                            src="../assets/images/header__line.png"
+                            alt="헤더 라인"
+                        />
                     </div>
                 </div>
                 <div class="header__innder3">
@@ -616,7 +59,9 @@
                     <div class="menu__about" style="opacity: 1">
                         ABOUT US
                         <ul
+                            class="menu__list"
                             style="
+                                display: none;
                                 position: absolute;
                                 left: 200px;
                                 top: 50%;
@@ -634,9 +79,33 @@
                         </ul>
                     </div>
                     <div class="menu__logo2">
-                        <img src="../assets/images/menuand1.png" alt="" />
+                        <img
+                            src="../assets/images/menuand1.png"
+                            alt="투댑스 로고"
+                        />
                     </div>
-                    <div class="menu__work">OUR WORK</div>
+                    <div class="menu__work" style="opacity: 1">
+                        OUR WORK
+                        <ul
+                            class="menu__list2"
+                            style="
+                                display: none;
+                                position: absolute;
+                                left: 200px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                color: #fff;
+                                font-family: Baskervville;
+                                font-size: 120px;
+                            "
+                        >
+                            <li>Bag</li>
+                            <li>Box</li>
+                            <li>Total Packaging</li>
+                            <li>Logo Effect</li>
+                            <li>Manufacturing</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <section id="section1">
@@ -676,10 +145,21 @@
                     <div class="section2__image2"></div>
                 </div>
                 <div class="section2__slide">
-                    Global leading Provider in Packaging
+                    <div class="slide__content">
+                        Global leading Provider in Packaging
+                    </div>
+                    <div class="slide__content">
+                        Global leading Provider in Packaging
+                    </div>
                 </div>
             </section>
             <section id="section3">
+                <div class="mouse__cursor__main">
+                    <div class="mouse__cursor" style="top: 399px; left: 471px">
+                        <p class="cursor__text">view more</p>
+                    </div>
+                </div>
+
                 <div class="section3__left"></div>
                 <div class="section3__right">
                     <div class="section3__container">
@@ -697,21 +177,27 @@
                         <img
                             class="section3__img1"
                             src="../assets/images/section3__1.png"
-                            alt=""
+                            alt="section3 이미지 1"
                         />
                         <img
                             class="section3__img2"
                             src="../assets/images/section3__2.png"
-                            alt=""
+                            alt="section3 이미지 2"
                         />
                         <img
                             class="section3__img3"
                             src="../assets/images/section3__3.png"
-                            alt=""
+                            alt="section3 이미지 3"
                         />
                     </div>
                     <div class="section3__right__slide">
-                        <div class="section3__last__img"></div>
+                        <div
+                            class="section3__last__img active"
+                            style="
+                                background-image: url(../assets/images/section3__last.png);
+                            "
+                        ></div>
+
                         <div class="section3__desc__last">
                             <div class="section3__desc4">
                                 S&K International <br />
@@ -730,7 +216,7 @@
                                 <img
                                     class="section3__arrow__img"
                                     src="../assets/images/arrow.png"
-                                    alt=""
+                                    alt="화살표 이미지"
                                 />
                             </div>
                             <div class="section3__pcw">
@@ -750,13 +236,38 @@
                         Sapien purus arcu consectetur vestibulum sed cras
                         venenatis odio. Cursus sapien conv
                     </div>
-                    <div class="section4__slider__img">
-                        <img
-                            src="../assets/images/section4__slider.png"
-                            alt=""
-                        />
+                    <div class="section4__slider__wrap">
+                        <div class="section4__slider__img">
+                            <div class="section4__slider__inner">
+                                <div class="slider s1">
+                                    <img
+                                        src="../assets/images/globalbrand.png"
+                                        alt=" 글로벌 이미지 슬라이드"
+                                    />
+                                </div>
+                                <div class="slider s2">
+                                    <img
+                                        src="../assets/images/globalbrand.png"
+                                        alt=" 글로벌 이미지 슬라이드"
+                                    />
+                                </div>
+                                <div class="slider s3">
+                                    <img
+                                        src="../assets/images/globalbrand.png"
+                                        alt=" 글로벌 이미지 슬라이드"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider__dot">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
                     </div>
                 </div>
+
                 <div class="section4__about">
                     <div class="section4__aboutus">ABOUT US</div>
                     <div class="section4__work">OUR WORK</div>
@@ -791,6 +302,216 @@
                 </div>
             </footer>
         </div>
-        <script></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
+        <!-- 마우스 변경 효과 -->
+        <script>
+            document
+                .querySelector("#section3")
+                .addEventListener("mousemove", (e) => {
+                    gsap.to(".mouse__cursor", {
+                        duration: 0.01,
+                        left: e.pageX,
+                        top: e.pageY,
+                    });
+
+                    // 마우스 좌표 값
+                    let mousePageX = e.pageX;
+                    let mousePageY = e.pageY;
+
+                    // 전체 화면 가로 값
+                    window.innerWidth; //  1920 브라우저 크기
+                    window.outerWidth; // 1920 브라우저 크기(스크롤 바 포함)
+                    window.screen.width; // 1920 화면 크기
+
+                    // 마우스 좌표 값 기준점 가운데로 설정 > (0,0)이 됨
+                    let centerPageX = window.innerWidth / 2 - mousePageX;
+                    let centerPageY = window.innerHeight / 2 - mousePageY;
+                });
+        </script>
+
+        <!-- LI 속성들이 나오게 하는 스크립트 -->
+        <script>
+            const menuAbout = document.querySelector(".menu__about");
+            const menuList = document.querySelector(".menu__list");
+            const menuLogo2 = document.querySelector(".menu__logo2");
+            const menuWork = document.querySelector(".menu__work");
+            const menuList2 = document.querySelector(".menu__list2");
+
+            menuAbout.addEventListener("click", function () {
+                if (menuList.style.display === "none") {
+                    menuList.style.display = "block";
+                    allMenu.classList.add("on");
+                    menuLogo2.style.display = "none";
+                    menuAbout.style.fontSize = "300px";
+
+                    //  about을 눌렀을 때 our랑 겹치지 않게 히기
+                    if (menuList2.style.display === "block") {
+                        menuList2.style.display = "none";
+                        menuWork.style.fontSize = "120px";
+                    }
+                } else {
+                    menuList.style.display = "none";
+                    allMenu.classList.remove("on");
+                    menuLogo2.style.display = "block";
+                    menuAbout.style.fontSize = "120px";
+                }
+            });
+
+            menuWork.addEventListener("click", function () {
+                if (menuList2.style.display === "none") {
+                    menuList2.style.display = "block";
+                    allMenu.classList.add("on");
+                    menuLogo2.style.display = "none";
+                    menuWork.style.fontSize = "300px";
+
+                    // our를 눌렀을 때 about이랑 겹치지 않게 히기
+                    if (menuList.style.display === "block") {
+                        menuList.style.display = "none";
+                        menuAbout.style.fontSize = "120px";
+                    }
+                } else {
+                    menuList2.style.display = "none";
+                    allMenu.classList.remove("on");
+                    menuLogo2.style.display = "block";
+                    menuWork.style.fontSize = "120px";
+                }
+            });
+        </script>
+
+        <!-- x누르면 창이 닫히는 스크립트 -->
+        <script>
+            const allMenu = document.querySelector("#allMenu");
+            const menuX = document.querySelector(".menu__x");
+
+            menuX.addEventListener("click", function () {
+                allMenu.style.display = "none";
+            });
+        </script>
+
+        <!-- hover효과 -->
+        <script>
+            const menuListItem = document.querySelectorAll(".menu__list li");
+
+            menuListItem.forEach((item) => {
+                item.addEventListener("mouseover", function () {
+                    this.classList.add("hovered");
+                });
+
+                item.addEventListener("mouseout", function () {
+                    this.classList.remove("hovered");
+                });
+            });
+
+            const menuListItem2 = document.querySelectorAll(".menu__list2 li");
+
+            menuListItem2.forEach((item) => {
+                item.addEventListener("mouseover", function () {
+                    this.classList.add("hovered");
+                });
+
+                item.addEventListener("mouseout", function () {
+                    this.classList.remove("hovered");
+                });
+            });
+        </script>
+
+        <!-- 글로벌 브랜드 이미지 슬라이드 -->
+        <script>
+            const sliderWrap = document.querySelector(
+                ".section4__slider__wrap"
+            );
+            const sliderImg = sliderWrap.querySelector(
+                ".section4__slider__img"
+            ); // 보여지는 영역
+            const sliderInner = sliderWrap.querySelector(
+                ".section4__slider__inner"
+            ); // 움직이는 영역
+            const slider = sliderWrap.querySelectorAll(".slider"); // 개별 이미지
+
+            let currentIndex = 0; // 현재 보이는 이미지
+            let sliderCount = slider.length; // 이미지 갯수
+            let sliderInterval = 2000; // 이미지 변경 간격 시간
+            let sliderWidth = slider[0].clientWidth; // 이미지 가로값 구하기
+            let sliderClone = sliderInner.firstElementChild.cloneNode(true); // 첫 번째 이미지 복사
+
+            function sliderEffect() {
+                currentIndex++;
+
+                sliderInner.style.transition = "all 0.6s";
+                sliderInner.style.transform = `translateX(-${
+                    sliderWidth * currentIndex
+                }px)`;
+
+                // 마지막 이미지에 위치했을 때
+                if (currentIndex == sliderCount) {
+                    setTimeout(() => {
+                        sliderInner.style.transition = "0s";
+                        sliderInner.style.transform = `translateX(0px)`;
+                    }, 700);
+                    currentIndex = 0;
+                }
+            }
+
+            setInterval(sliderEffect, sliderInterval);
+        </script>
+
+        <script>
+            const sliderDot = document.querySelector(".slider__dot"); //닷 메뉴
+            let dotIndex = "";
+            function init() {
+                // <a href="#" class="dot active">이미지1</a>
+
+                slider.forEach(() => {
+                    dotIndex += "<a href='#' class='dot'>이미지1</a>";
+                });
+                sliderDot.innerHTML = dotIndex;
+
+                // 첫 번째 닷 버튼에 활성화 표시(active)
+                sliderDot.firstChild.classList.add("active");
+            }
+            init();
+
+            // 이미지 이동
+            function gotoSlider(num) {
+                sliderInner.style.transition = "all 400ms";
+                sliderInner.style.transform =
+                    "translateX(" + -sliderWidth * num + "px)";
+                currentIndex = num;
+
+                // 두번째 이미지 == 두번째 닷에 클래스 추가
+                // 닷 메뉴 클래스 모두 삭제 -> 해당 이미지의 닷 메뉴에 클래스 추가
+                let dotActive = document.querySelectorAll(".slider__dot .dot");
+                dotActive.forEach((el) => el.classList.remove("active"));
+                dotActive[num].classList.add("active");
+            }
+
+            // 버튼 클릭했을 때
+            document
+                .querySelectorAll(".slider__btn a")
+                .forEach((btn, index) => {
+                    btn.addEventListener("click", () => {
+                        let prevIndex =
+                            (currentIndex + (sliderCount - 1)) % sliderCount;
+                        let nextIndex = (currentIndex + 1) % sliderCount;
+
+                        if (btn.classList.contains("prev")) {
+                            gotoSlider(prevIndex);
+                        } else {
+                            gotoSlider(nextIndex);
+                        }
+                    });
+                });
+
+            // 닷 버튼을 클릭했을 때 해당 이미지로 이동
+            document
+                .querySelectorAll(".slider__dot .dot")
+                .forEach((dot, index) => {
+                    dot.addEventListener("click", () => {
+                        gotoSlider(index);
+                    });
+                });
+        </script>
     </body>
 </html>
