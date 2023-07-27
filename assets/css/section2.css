@@ -54,7 +54,7 @@ br.mo {
     display: none;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 360px) {
     br.pc {
         display: none;
     }
@@ -63,20 +63,27 @@ br.mo {
     }
     #section2 {
         width: 100%;
-        height: 2080px;
-        padding-top: 300px;
+        height: auto;
     }
     .section2__image {
         flex-direction: column;
+        object-fit: fill;
+        width: 360px;
+        height: 700px;
     }
     .section2__image1 {
-        width: 1000px;
-        height: 717px;
+        width: 360px;
+        height: 700px;
         margin-bottom: 70px;
+        object-fit: fill;
     }
     .section2__image2 {
-        width: 1000px;
-        height: 717px;
+        width: 360px;
+        height: 700px;
         margin-bottom: 70px;
+        object-fit: cover;
+    }
+    .section2__slide {
+        font-size: 80px;
     }
 }

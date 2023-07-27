@@ -184,9 +184,6 @@
     z-index: 1000;
     opacity: 0;
 }
-.mouse__cursor.on {
-    opacity: 1;
-}
 
 .cursor__text {
     text-align: center;
