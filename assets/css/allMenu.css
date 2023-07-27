@@ -174,3 +174,131 @@
 .menu__list2 li:hover::before {
     opacity: 1; /* 마우스 오버 시 이미지가 부드럽게 나타나도록 설정 */
 }
+
+@media (max-width: 360px) {
+    #allMenu {
+        width: 360px;
+        height: 640px;
+    }
+    /* 메뉴 펼침 상태일 때 스타일 */
+    #allMenu.on {
+        display: block;
+    }
+    /* 메뉴 아이템 스타일 */
+    .menu__about,
+    .menu__work {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    /* ABOUT US, OUR WORK 폰트 크기 스타일 */
+    .menu__about,
+    .menu__work {
+        font-size: 20px;
+    }
+
+    /* 메뉴 아이템 활성화 스타일 */
+    .menu__about.active,
+    .menu__work.active {
+        font-size: 30px;
+    }
+    .menu__about.active .menu__list {
+        display: block;
+    }
+    /* 메뉴 리스트 스타일 */
+    .menu__list {
+        display: none;
+        position: absolute;
+        left: 200px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        font-family: Baskervville;
+        font-size: 30px;
+    }
+    .menu__list2 {
+        display: none;
+        position: absolute;
+        left: 200px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        font-family: Baskervville;
+        font-size: 30px;
+    }
+    /* 메뉴 리스트 활성화 스타일 */
+    .menu__list.active {
+        display: block;
+    }
+
+    .menu__list2.active {
+        display: block;
+    }
+    .menu__list {
+        opacity: 1; /* 트랜지션 효과와 함께 보이도록 설정 */
+        transition: opacity 0.5s ease;
+    }
+
+    .menu__list li {
+        position: relative; /* li 요소 내부에서 원을 정확한 위치에 추가하기 위해 필요 */
+    }
+
+    .menu__list li::before {
+        content: "";
+        position: absolute;
+        top: 65%;
+        left: -50px;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: transparent;
+        background-image: url(../images/hover.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0; /* 처음에는 이미지를 숨김 */
+        transition: opacity 0.3s ease; /* 이미지가 나타날 때 부드럽게 나타나도록 설정 */
+        z-index: -1; /* 원이 텍스트 뒤에 렌더링되도록 z-index 설정 */
+    }
+
+    .menu__list li:hover::before {
+        opacity: 1; /* 마우스 오버 시 이미지가 부드럽게 나타나도록 설정 */
+    }
+    .menu__list2 {
+        opacity: 1; /* 트랜지션 효과와 함께 보이도록 설정 */
+        transition: opacity 0.5s ease;
+    }
+
+    .menu__list2 li {
+        position: relative; /* li 요소 내부에서 원을 정확한 위치에 추가하기 위해 필요 */
+        text-align: left;
+        padding-left: 600px;
+    }
+
+    .menu__list2 li::before {
+        content: "";
+        position: absolute;
+        top: 65%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: transparent;
+        background-image: url(../images/hover.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0; /* 처음에는 이미지를 숨김 */
+        transition: opacity 0.3s ease; /* 이미지가 나타날 때 부드럽게 나타나도록 설정 */
+        z-index: -1; /* 원이 텍스트 뒤에 렌더링되도록 z-index 설정 */
+    }
+
+    .menu__list2 li:hover::before {
+        opacity: 1; /* 마우스 오버 시 이미지가 부드럽게 나타나도록 설정 */
+    }
+    .menu__header {
+        width: 360px;
+    }
+    .menu__x {
+        margin-right: 40px;
+    }
+}
