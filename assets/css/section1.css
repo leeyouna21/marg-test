@@ -69,24 +69,31 @@ br.mo {
     .section1__desc {
         font-size: 40px;
         margin-top: -100px;
-        margin-left: -30px;
+        margin-left: -40px;
     }
     .section1__desc2 {
-        margin-top: -70px;
+        margin-top: -60px;
         flex-direction: column;
         position: relative;
         z-index: 9;
+        margin-left: -10px;
     }
     .desc2__inner1 {
         font-size: 14px;
         margin-left: 30px;
         font-weight: bold;
+        line-height: 1.5;
+    }
+    .section1__one {
+        width: 320px;
+        height: 320px;
     }
     .desc2__inner2 {
         font-size: 14px;
-        margin-top: 10px;
+        margin-top: 27px;
         margin-left: 30px;
         white-space: nowrap;
         font-weight: bold;
+        line-height: 1.5;
     }
 }

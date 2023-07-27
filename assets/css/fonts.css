@@ -23,7 +23,7 @@
 
 @font-face {
     font-family: "Gotham";
-    font-weight: 700;
+    font-weight: 500;
     font-display: swap;
     src: local("Gotham-Regular"),
         url("fonts/Gotham/Gotham-Regular.otf") format("truetype");

@@ -74,7 +74,7 @@ br.mo {
     .section2__image1 {
         width: 360px;
         height: 700px;
-        margin-bottom: 70px;
+        margin-bottom: 30px;
         object-fit: fill;
     }
     .section2__image2 {
@@ -85,5 +85,6 @@ br.mo {
     }
     .section2__slide {
         font-size: 80px;
+        top: -62px;
     }
 }

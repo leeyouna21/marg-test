@@ -105,42 +105,46 @@ br.mo {
     }
     #section4 {
         width: 360px;
-        height: 500px;
+        height: auto;
     }
     .section4__container {
         width: 360px;
-        height: 400px;
+        height: auto;
     }
     .section4__desc1 {
         font-size: 35px;
-        margin-left: 30px;
+        margin-left: 20px;
         margin-top: -80px;
     }
     .section4__desc2 {
         font-size: 14px;
-        margin-left: 30px;
+        margin-left: 20px;
         margin-top: -30px;
     }
     .section4__slider {
         width: 360px;
-        height: 100px;
+        height: auto;
     }
     .section4__slider__wrap {
-        height: 300px;
+        height: auto;
+        width: 360px;
     }
     .section4__slider__img {
-        height: 200px;
-        margin-top: -250px;
+        width: 360px;
+        height: auto;
+        margin-top: -50px;
     }
     .section4__slider__inner {
-        height: 200px;
+        height: auto;
     }
     .slider__dot {
         position: sticky;
         position: relative;
         z-index: 99999;
         text-align: center;
-        margin-top: -230px;
+    }
+    .dot.active {
+        background-color: #ff0000; /* 활성화된 dot의 배경색을 변경합니다 */
     }
     .section4__about {
         width: 360px;
@@ -150,10 +154,13 @@ br.mo {
         display: flex;
         justify-content: center;
     }
+    .section4__about {
+        height: 69px;
+    }
     .section4__aboutus {
-        margin-top: 15px;
+        margin-top: 25px;
     }
     .section4__work {
-        margin-top: 15px;
+        margin-top: 25px;
     }
 }
