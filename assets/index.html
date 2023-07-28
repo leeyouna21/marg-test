@@ -306,13 +306,16 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="slider__dot">
-                        <div class="dot active"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
+                        <div class="slider__dot">
+                            <div class="dot">
+                                <a href="#">이미지1</a>
+                            </div>
+                            <div class="dot"><a href="#">이미지2</a></div>
+                            <div class="dot"><a href="#">이미지3</a></div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="section4__about">
                     <div class="section4__aboutus">ABOUT US</div>
                     <div class="section4__work">OUR WORK</div>
@@ -496,7 +499,7 @@
                 ".section4__slider__inner"
             );
             const slider = document.querySelectorAll(".section4__slider");
-            const sliderDot = document.querySelector(".slider__dot");
+            const sliderDot = sliderWrap.querySelectorAll(".slider__dot"); // 닷 메뉴
 
             let currentIndex = 0;
             let sliderCount = slider.length;
@@ -526,6 +529,46 @@
             }
 
             setInterval(sliderEffect, sliderInterval);
+
+            function init() {
+                // 이미지 갯수만큼 닷 생성
+                slider.forEach(
+                    () => (dotIndex += "<a href='#' class='dot'>이미지</a>")
+                );
+                sliderDot.innerHTML = dotIndex;
+                // 첫 번째 닷 메뉴에 활성화
+                sliderDot.firstElementChild.classList.add("active");
+            }
+            init();
+
+            //이미지 이동시키기
+            function gotoSlider(num) {
+                sliderInner.style.transition = "all 400ms";
+                sliderInner.style.transform =
+                    "translateX(" + -sliderWidth * num + "px)";
+                currentIndex = num;
+
+                // 닷 메뉴에 불 들어오기
+                let dotActive = document.querySelectorAll(
+                    ".slider__dot .dot a"
+                );
+                dotActive.forEach((active) =>
+                    active.classList.remove("active")
+                );
+                dotActive[num].classList.add("active");
+            }
+
+            function btnClick() {
+                let dotActive = document.querySelectorAll(
+                    ".slider__dot .dot a"
+                );
+                dotActive.forEach((btn, index) => {
+                    btn.addEventListener("click", () => {
+                        gotoSlider(index);
+                    });
+                });
+            }
+            btnClick();
         </script>
 
         <script>
@@ -564,28 +607,6 @@
             }
 
             setInterval(articleEffect, articleInterval);
-        </script>
-
-        <!-- dot 버튼 -->
-        <script>
-            // const sliderDot = document.querySelector(".slider__dot");
-
-            // // 모든 닷 버튼 선택
-            // const dots = document.querySelectorAll(".slider__dot .dot");
-
-            // // 각 닷 버튼에 클릭 이벤트 리스너 추가
-            // dots.forEach((dot, index) => {
-            //     dot.addEventListener("click", () => {
-            //         // 모든 닷 버튼에서 active 클래스 제거
-            //         dots.forEach((dot) => dot.classList.remove("active"));
-
-            //         // 클릭한 닷 버튼에 active 클래스 추가
-            //         dot.classList.add("active");
-
-            //         // 해당하는 슬라이드로 이동
-            //         gotoSlider(index);
-            //     });
-            // });
         </script>
     </body>
 </html>
