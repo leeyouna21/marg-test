@@ -176,24 +176,21 @@
 }
 
 @media (max-width: 360px) {
-    /* #allMenu {
+    #allMenu {
         width: 360px;
         height: 640px;
     }
-    /* ABOUT US, OUR WORK 폰트 크기 스타일 */
     .menu__about,
     .menu__work {
         font-size: 20px;
     }
-    /* 메뉴 아이템 활성화 스타일 */
     .menu__about.active,
     .menu__work.active {
-        font-size: 50px;
+        font-size: 70px;
     }
     .menu__about.active .menu__list {
         display: block;
     }
-    /* 메뉴 리스트 스타일 */
     .menu__list {
         font-size: 40px;
     }
@@ -219,6 +216,10 @@
         width: 50px;
         height: 50px;
         left: -10px;
+    }
+    .SK__logo {
+        width: 120px;
+        height: 100px;
     }
     .menu__header {
         width: 360px;

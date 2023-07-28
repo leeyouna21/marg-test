@@ -101,7 +101,11 @@
                         </ul>
                     </div>
                     <div class="menu__logo2">
-                        <img src="./images/menuand1.png" alt="투댑스 로고" />
+                        <img
+                            class="SK__logo"
+                            src="./images/menuand1.png"
+                            alt="투댑스 로고"
+                        />
                     </div>
                     <div class="menu__work" style="opacity: 1">
                         OUR WORK
@@ -398,29 +402,47 @@
             const menuList = document.querySelector(".menu__list");
             const menuWork = document.querySelector(".menu__work");
             const menuList2 = document.querySelector(".menu__list2");
+            const skLogo = document.querySelector(".SK__logo");
+
+            function resetMenuState() {
+                menuList.classList.remove("active");
+                menuList2.classList.remove("active");
+                menuAbout.classList.remove("active");
+                menuWork.classList.remove("active");
+            }
 
             // 창 닫는 스크립트
             menuX.addEventListener("click", function () {
                 allMenu.style.display = "none";
+                resetMenuState();
+                skLogo.style.display = "block"; // 메뉴 닫을 때 로고 다시 보이기
             });
 
             df.addEventListener("click", function () {
-                allMenu.classList.toggle("on");
+                if (allMenu.classList.contains("on")) {
+                    allMenu.classList.remove("on");
+                    allMenu.style.display = "none";
+                    resetMenuState();
+                } else {
+                    allMenu.classList.add("on");
+                    allMenu.style.display = "block";
+                }
+                skLogo.style.display = "block"; // "df"를 클릭했을 때 로고 보이기
             });
 
             // li 나오는 스크립트
             menuAbout.addEventListener("click", function () {
+                resetMenuState();
                 menuList.classList.add("active");
-                menuList2.classList.remove("active");
-                menuWork.classList.remove("active");
                 menuAbout.classList.add("active");
+                skLogo.style.display = "none";
             });
 
             menuWork.addEventListener("click", function () {
+                resetMenuState();
                 menuList2.classList.add("active");
-                menuList.classList.remove("active");
-                menuAbout.classList.remove("active");
                 menuWork.classList.add("active");
+                skLogo.style.display = "none";
             });
         </script>
 

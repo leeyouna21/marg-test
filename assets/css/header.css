@@ -22,6 +22,7 @@
     right: 59px;
     top: 50px;
     z-index: 9999;
+    cursor: pointer;
 }
 #nav .df i {
     display: block;
